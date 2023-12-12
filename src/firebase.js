@@ -12,14 +12,8 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_APP_ID,
 };
 
-// Now you can use firebaseConfig in your Firebase initialization
-// For example, if you are using Firebase with JavaScript SDK:
-import { initializeApp } from 'firebase/app';
-const app = initializeApp(firebaseConfig);
-
 
 const app = initializeApp(firebaseConfig);
-
 const auth = getAuth();
 const db = getFirestore(app)
 const storage = getStorage(app)
