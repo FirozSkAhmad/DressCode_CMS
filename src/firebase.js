@@ -3,15 +3,20 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyDwC5stGjq6ClwuzSMgIfQ6qBtMHpL4TII",
-  authDomain: "brand-elevate-cms-ce1c4.firebaseapp.com",
-  projectId: "brand-elevate-cms-ce1c4",
-  storageBucket: "brand-elevate-cms-ce1c4.appspot.com",
-  messagingSenderId: "644678015999",
-  appId: "1:644678015999:web:933e39266b22375f00e5ca"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
+
+// Now you can use firebaseConfig in your Firebase initialization
+// For example, if you are using Firebase with JavaScript SDK:
+import { initializeApp } from 'firebase/app';
+const app = initializeApp(firebaseConfig);
+
 
 const app = initializeApp(firebaseConfig);
 
