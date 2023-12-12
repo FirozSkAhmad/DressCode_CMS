@@ -1,0 +1,121 @@
+.header_con {
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 10px;
+  height: 12%;
+}
+
+.menu_con {
+  display: none;
+}
+.action_con,
+.bottom_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_container {
+  display: flex;
+}
+
+.search_input {
+  width: 300px;
+  padding: 10px;
+  background-color: #cecece;
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+  padding-left: 15px;
+  outline: none;
+  transition: border 0.3s;
+  border: 2px solid #ccc;
+}
+
+.search_input:focus {
+  border: 2px solid #39b549;
+  border-right: none;
+}
+
+.search_input:focus + .search_icon {
+  border: 2px solid #39b549;
+  border-left: none;
+}
+
+.search_icon {
+  background-color: #cecece;
+  margin-left: -1px;
+  padding-right: 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.action_con button,
+.bottom_container button {
+  background-color: #39b549;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.side_nav {
+  position: fixed;
+  top: 0;
+  left: 0; /* Start from the left */
+  width: 0; /* Initially hidden width */
+  height: 100%;
+  background-color: #383838;
+  transition: width 0.3s ease; /* Smooth transition effect */
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.side_nav.open {
+  width: 90%; /* Expanded width when the .open class is present */
+}
+
+.mvHead_con {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header_con {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    height: 30%;
+  }
+  .menu_con {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    order: -2;
+  }
+  .menu_con .cmpy_name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cmpy_name h6 {
+    margin-top: 4px;
+  }
+  .title {
+    display: none;
+  }
+  .action_con {
+    display: none;
+  }
+
+  .mvHead_con {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .search_input {
+    width: 100%;
+  }
+}
