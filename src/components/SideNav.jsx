@@ -6,6 +6,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { useContext } from "react";
 import sharedContext from "../context/SharedContext";
+import portfolio from "../../utils/portfolio.svg";
 import closeIcon from "../../utils/closeIcon.svg";
 import toast from "react-hot-toast";
 
@@ -49,7 +50,7 @@ const SideNav = () => {
             style={{
               textDecoration: "none",
               color: "white",
-              backgroundColor: isRouteActive("/news") ? "gray" : "transparent",
+              backgroundColor: isRouteActive("/blog") ? "gray" : "transparent",
               borderRadius: "5px",
             }}
             to="/blog"
@@ -58,6 +59,22 @@ const SideNav = () => {
             <div className="category">
               <img src={news} alt="News SVG" />
               <h3>Blog</h3>
+            </div>
+          </NavLink>
+          <NavLink
+            style={{
+              textDecoration: "none",
+              color: "white",
+              backgroundColor: isRouteActive("/portfolio")
+                ? "gray"
+                : "transparent",
+              borderRadius: "5px",
+            }}
+            to="/portfolio"
+          >
+            <div className="category">
+              <img src={portfolio} alt="portfolio SVG" />
+              <h3>Portfolio</h3>
             </div>
           </NavLink>
         </div>

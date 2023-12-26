@@ -23,6 +23,8 @@ const Upload = () => {
   const queryParams = new URLSearchParams(location.search);
   const headerName = queryParams.get("headerName");
 
+  console.log(headerName)
+
   const fileInputRef = useRef(null);
 
   const handleButtonClick = () => {

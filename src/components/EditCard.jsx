@@ -34,7 +34,6 @@ const EditCard = () => {
 
   const [heading, setHeading] = useState(rowData.heading);
   const [bodyText, setBodyText] = useState(rowData.bodyText);
-  const [buttonTitle, setButtonTitle] = useState(rowData.buttonTitle);
   const [img, setImg] = useState(null);
   const [modifiedImgUrl, setModifiedImgUrl] = useState(
     rowData.img.replace("/images/", "/images%2F")
@@ -82,7 +81,6 @@ const EditCard = () => {
       // Clear form fields and error state after successful upload
       setHeading("");
       setBodyText("");
-      setButtonTitle("");
       setImg(null);
       setModifiedImgUrl(null);
       setError("");

@@ -77,7 +77,7 @@ const Header = ({ headerName }) => {
               <button>Upload New</button>
             </NavLink>
           ) : (
-            <NavLink style={{ textDecoration: "none" }} to="/caseStudyUpload">
+            <NavLink style={{ textDecoration: "none" }} to="/upload">
               <button>Upload New</button>
             </NavLink>
           )}

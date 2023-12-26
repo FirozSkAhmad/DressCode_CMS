@@ -48,6 +48,10 @@ const appRouter = createBrowserRouter([
         path: "/blog",
       },
       {
+        element: <Protected cmp={<Main name="Portfolio" />} />,
+        path: "/portfolio",
+      },
+      {
         element: <Protected cmp={<Upload />} />,
         path: "/upload",
       },

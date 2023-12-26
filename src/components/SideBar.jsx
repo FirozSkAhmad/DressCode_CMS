@@ -1,5 +1,6 @@
 import "./SideBar.css";
 import news from "../../utils/news.svg";
+import portfolio from "../../utils/portfolio.svg";
 import logout from "../../utils/logout.svg";
 import { NavLink, useLocation } from "react-router-dom";
 import { signOut } from "firebase/auth";
@@ -8,7 +9,6 @@ import toast from "react-hot-toast";
 
 const SideBar = () => {
   const location = useLocation();
-
   // Function to check if the current route matches a given path
   const isRouteActive = (path) => {
     return location.pathname === path;
@@ -40,7 +40,7 @@ const SideBar = () => {
             style={{
               textDecoration: "none",
               color: "white",
-              backgroundColor: isRouteActive("/news") ? "gray" : "transparent",
+              backgroundColor: isRouteActive("/blog") ? "gray" : "transparent",
               borderRadius: "5px",
             }}
             to="/blog"
@@ -48,6 +48,20 @@ const SideBar = () => {
             <div className="category">
               <img src={news} alt="News SVG" />
               <h3>Blog</h3>
+            </div>
+          </NavLink>
+          <NavLink
+            style={{
+              textDecoration: "none",
+              color: "white",
+              backgroundColor: isRouteActive("/portfolio") ? "gray" : "transparent",
+              borderRadius: "5px",
+            }}
+            to="/portfolio"
+          >
+            <div className="category">
+              <img src={portfolio} alt="portfolio SVG" />
+              <h3>Portfolio</h3>
             </div>
           </NavLink>
         </div>

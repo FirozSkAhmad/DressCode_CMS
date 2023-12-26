@@ -12,6 +12,7 @@ const CardsCon = ({ headerName }) => {
 
   const [blogData, setBlogData] = useState([]);
 
+
   const fetchData = async () => {
     try {
       setLoader(true);
