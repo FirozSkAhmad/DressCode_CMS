@@ -3,8 +3,9 @@ import menuIcon from "../../utils/menu.svg";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import sharedContext from "../context/SharedContext";
-import "./Header.css";
 import SideNav from "./SideNav";
+import "./Header.css";
+
 
 const Header = ({ headerName }) => {
   const { isSideNavOpen, setIsSideNavOpen } = useContext(sharedContext);
