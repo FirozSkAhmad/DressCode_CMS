@@ -6,7 +6,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { useContext } from "react";
 import sharedContext from "../context/SharedContext";
-import portfolio from "../../utils/portfolio.svg";
+// import portfolio from "../../utils/portfolio.svg";
 import closeIcon from "../../utils/closeIcon.svg";
 import toast from "react-hot-toast";
 
@@ -61,7 +61,7 @@ const SideNav = () => {
               <h3>Blog</h3>
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             style={{
               textDecoration: "none",
               color: "white",
@@ -76,7 +76,7 @@ const SideNav = () => {
               <img src={portfolio} alt="portfolio SVG" />
               <h3>Portfolio</h3>
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
       <div className="logout_con" onClick={handleLogout}>

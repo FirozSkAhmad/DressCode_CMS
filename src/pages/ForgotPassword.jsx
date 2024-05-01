@@ -44,7 +44,7 @@ const ForgotPassword = () => {
   return (
     <div className="forPass_pg">
       <Loader />
-      <h3>Brand Elevate</h3>
+      <h3>Dress Code</h3>
       <div>
         <h1>Reset Password</h1>
         <form onSubmit={(e) => handleSubmit(e)} className="forPass_con">
@@ -81,7 +81,7 @@ const ForgotPassword = () => {
           </div>
         </form>
         <div className="ck__Act">
-          <p>©2023 Prosquad. All Rights Reserved</p>
+          <p>©2024 DressCode. All Rights Reserved</p>
         </div>
       </div>
     </div>

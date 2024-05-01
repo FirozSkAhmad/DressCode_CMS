@@ -54,7 +54,7 @@ const Login = () => {
   return (
     <div className="login_pg">
       <Loader />
-      <h3>Brand Elevate</h3>
+      <h3>Dress Code</h3>
       <div>
         <h4>Login</h4>
         <form onSubmit={handleSubmit} className="login_con">
@@ -65,7 +65,7 @@ const Login = () => {
               onChange={onChangeInput}
               placeholder="Email"
               required
-              autoComplete="off"
+              // autoComplete="off"
               name="email"
             />
           </div>
@@ -110,7 +110,7 @@ const Login = () => {
           </div>
         </form>
         <div className="ck__Act">
-          <p>©2023 BrandElevate. All Rights Reserved</p>
+          <p>©2024 DressCode. All Rights Reserved</p>
         </div>
       </div>
     </div>

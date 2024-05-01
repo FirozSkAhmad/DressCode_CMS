@@ -1,6 +1,6 @@
 import "./SideBar.css";
 import news from "../../utils/news.svg";
-import portfolio from "../../utils/portfolio.svg";
+// import portfolio from "../../utils/portfolio.svg";
 import logout from "../../utils/logout.svg";
 import { NavLink, useLocation } from "react-router-dom";
 import { signOut } from "firebase/auth";
@@ -32,7 +32,7 @@ const SideBar = () => {
     <div className="sideNav_con">
       <div className="Routes_con">
         <div className="heading">
-          <h2>BrandElevate |</h2>
+          <h2>DressCode |</h2>
           <h6>cms dashboard</h6>
         </div>
         <div className="categories_con">
@@ -50,7 +50,7 @@ const SideBar = () => {
               <h3>Blog</h3>
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             style={{
               textDecoration: "none",
               color: "white",
@@ -63,7 +63,7 @@ const SideBar = () => {
               <img src={portfolio} alt="portfolio SVG" />
               <h3>Portfolio</h3>
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
       <div className="logout_con" onClick={handleLogout}>
