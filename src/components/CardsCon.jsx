@@ -56,7 +56,7 @@ const CardsCon = ({ headerName }) => {
       {completeData.length > 0 ? (
         completeData?.map((data) => (
           <div className="card" key={data.id}>
-            <div className="img_con">
+            <div className="image_con">
               <img
                 src={data?.img}
                 style={{
